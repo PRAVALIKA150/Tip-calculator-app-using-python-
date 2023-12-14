@@ -12,3 +12,20 @@ print(f'⚖️ Tip Amount: ${tip_amount}')
 print('\n')
 print(f'💰 Total Amount: ${total}')
 print('--------------------------------')
+
+# using functions
+def calculateFoodTotal(food: float, tip_percentage: int) -> float:
+  tip = food * (tip_percentage / 100)
+  total = food + tip
+  print('\n\n\n')
+  print('--------------------------------')
+  print(f'🥘 Food Amount: ${food}')
+  print(f'⚖️ Tip Amount: ${tip}')
+  print('\n')
+  print(f'💰 Total Amount: ${total}')
+  print('--------------------------------')
+  return total
+
+total=calculateFoodTotal(100, 10)
+calculateFoodTotal(food=100, tip_percentage=20)
+
